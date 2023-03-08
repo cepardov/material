@@ -1,6 +1,7 @@
 <nav>
     <div class="nav-wrapper">
         <a href="{$urls.pages.index}" class="brand-logo">{$shop.name}</a>
+        {hook h='displaySearch'}
         {hook h='displayTop'}
     </div>
 </nav>
