@@ -16,3 +16,7 @@
 {hook h='displayTop'}
 
 {hook h='displayNavFullWidth'}
+
+{block name='header_top'}
+<h3>header top</h3>
+{/block}
