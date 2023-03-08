@@ -1,0 +1,28 @@
+.border-test {
+    border: 1px solid red;
+}
+.thumbnail-container .product-thumbnail {
+    overflow: hidden;
+}
+.thumbnail-container .product-thumbnail img {
+    -moz-transition: all 1.2s;
+    -webkit-transition: all 1.2s;
+    transition: all 1.2s;
+}
+.thumbnail-container .product-thumbnail:hover img {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.logo-maintenance {
+    max-width: 100%;
+}
+
+#header .header-top {
+    padding: 0 !important;
+}
+
+#header .logo {
+    max-width: 60% !important;
+    height: auto;
+}
