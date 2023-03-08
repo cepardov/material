@@ -10,3 +10,5 @@
 </nav>
 
 {hook h='displayNav1'}
+
+{hook h='displayNav2'}
