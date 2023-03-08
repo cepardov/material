@@ -12,15 +12,3 @@
 {hook h='displayNav1'}
 
 {hook h='displayNav2'}
-
-{block name='header_top'}
-    {if $shop.logo_details}
-        {if $page.page_name == 'index'}
-            <h1>
-                {renderLogo}
-            </h1>
-        {else}
-            {renderLogo}
-        {/if}
-    {/if}
-{/block}
