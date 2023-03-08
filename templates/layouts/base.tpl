@@ -1,3 +1,5 @@
+{include file='_partials/helpers.tpl'}
+
 <!DOCTYPE html>
 <html lang="{$language.locale}">
 <head>
