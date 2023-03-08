@@ -1,6 +1,7 @@
 <nav>
     <div class="nav-wrapper">
         <a href="{$urls.pages.index}" class="brand-logo">{$shop.name}</a>
+        {hook h='displayNavFullWidth'}
         <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="sass.html">Sass</a></li>
             <li><a href="badges.html">Components</a></li>
