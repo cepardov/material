@@ -8,3 +8,5 @@
     </ul>
     {/if}
 {/function}
+
+{menu nodes=$menu.children}
