@@ -1,6 +1,16 @@
 <nav>
     <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Logo</a>
+        <a href="#" class="brand-logo">
+            {if $shop.logo_details}
+                {if $page.page_name == 'index'}
+                    <h1>
+                        {renderLogo}
+                    </h1>
+                {else}
+                    {renderLogo}
+                {/if}
+            {/if}
+        </a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="sass.html">Sass</a></li>
             <li><a href="badges.html">Components</a></li>
