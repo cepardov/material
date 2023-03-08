@@ -8,13 +8,13 @@
         </ul>
     </div>
 </nav>
-
+<p>displayNav1</p>
 {hook h='displayNav1'}
-
+<p>displayNav2</p>
 {hook h='displayNav2'}
-
+<p>displayTop</p>
 {hook h='displayTop'}
-
+<p>displayNavFullWidth</p>
 {hook h='displayNavFullWidth'}
 
 {block name='header_top'}
