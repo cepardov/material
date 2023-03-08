@@ -1,8 +1,13 @@
 {block name='head_charset'}
   <meta charset="utf-8">
 {/block}
+
 {block name='head_ie_compatibility'}
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+{/block}
+
+{block name='head_viewport'}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 {/block}
 
 {block name='head_seo'}
@@ -23,17 +28,6 @@
       <link rel="alternate" href="{$pageUrl}" hreflang="{$code}">
     {/foreach}
   {/block}
-  
-  {block name='head_microdata'}
-    {include file="_partials/microdata/head-jsonld.tpl"}
-    {include file="_partials/microdata/google.tpl"}
-  {/block}
-  
-  {block name='head_microdata_special'}{/block}
-  
-  {block name='head_pagination_seo'}
-    {include file="_partials/pagination-seo.tpl"}
-  {/block}
 
   {block name='head_open_graph'}
     <meta property="og:title" content="{$page.meta.title}" />
@@ -41,11 +35,7 @@
     <meta property="og:url" content="{$urls.current_url}" />
     <meta property="og:site_name" content="{$shop.name}" />
     {if !isset($product) && $page.page_name != 'product'}<meta property="og:type" content="website" />{/if}
-  {/block}  
-{/block}
-
-{block name='head_viewport'}
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {/block}
 {/block}
 
 {block name='head_icons'}
@@ -53,16 +43,3 @@
   <link rel="shortcut icon" type="image/x-icon" href="{$shop.favicon}?{$shop.favicon_update_time}">
 {/block}
 
-{block name='stylesheets'}
-  {include file="_partials/stylesheets.tpl" stylesheets=$stylesheets}
-{/block}
-
-{block name='javascript_head'}
-  {include file="_partials/javascript.tpl" javascript=$javascript.head vars=$js_custom_vars}
-{/block}
-
-{block name='hook_header'}
-  {$HOOK_HEADER nofilter}
-{/block}
-
-{block name='hook_extra'}{/block}
