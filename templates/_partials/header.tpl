@@ -13,4 +13,6 @@
 
 {hook h='displayNav2'}
 
+{hook h='displayTop'}
+
 {hook h='displayNavFullWidth'}
